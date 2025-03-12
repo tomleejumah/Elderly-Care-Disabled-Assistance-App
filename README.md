@@ -1,14 +1,7 @@
-# University of Melbourne COMP30022 IT Project - ONYX
+#Kabarak University IT Project - ELderly care Android App
 
-## Members
 
-* Omja Das - 835780
-* Xinwei Ding - 758966
-* Brody Taylor - 832969
-* Ashley Duffy - 763163
-* Sameer Asim - 762727
-
-Tutor: Luca Morandini
+Tutor: Dr Kipkebut
 
 ## Contents
 
@@ -53,7 +46,7 @@ Android application designed to assist elderly and disabled people with navigati
 * Favourite place (Feature 13)
 * Annotations (Feature 14)
 
-The application is designed for Android API 28
+The application is designed for Android API 35
 Minimum Requirement: Android API 26
 
 ## Getting Started
@@ -67,7 +60,7 @@ Minimum Requirement: Android API 26
 1. Clone repository
 
 ```bash
-git clone https://github.com/COMP30022-18/ONYX
+git clone git@github.com:tomleejumah/Elderly-Care-Disabled-Assistance-App.git
 ```
 
 1. Checkout branch 'master'
@@ -93,7 +86,6 @@ git checkout origin master
 
 ### Testing
 
-Testing modules may be found via ONYX->app->java->(androidTest)/(Test)
 
 * The androidTest folder has UI testing for the core fragments attached to the main activity; this includes:
   * Maps fragment
