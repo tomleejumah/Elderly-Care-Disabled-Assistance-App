@@ -1,0 +1,135 @@
+//apply from: "$rootProject.projectDir/gradle.properties"
+apply plugin: 'com.android.application'
+
+android {
+    namespace "com.example.onyx.onyx"
+    compileSdk 34
+//    buildToolsVersion "28.0.3"
+    defaultConfig {
+        applicationId "com.example.onyx.onyx"
+        minSdk 23
+        targetSdk 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        buildConfigField("String",
+                "TWILIO_ACCESS_TOKEN",
+                "\"${getSecretProperty("TWILIO_ACCESS_TOKEN", "TWILIO_ACCESS_TOKEN")}\"")
+        buildConfigField("String",
+                "TWILIO_ACCESS_TOKEN_SERVER",
+                "\"${getSecretProperty("TWILIO_ACCESS_TOKEN_SERVER", "http://onyx-bd894.appspot.com/")}\"")
+        buildConfigField("boolean",
+                "USE_TOKEN_SERVER",
+                "${getSecretProperty("USE_TOKEN_SERVER", true)}")
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+    testOptions{
+        unitTests.returnDefaultValues = true
+    }
+    buildFeatures {
+        buildConfig = true
+    }
+}
+repositories {
+    jcenter()
+    maven {
+        url("https://mvnrepository.com")
+    }
+    mavenCentral()
+}
+
+dependencies {
+    // Firebase Dependencies
+    implementation 'com.google.firebase:firebase-firestore:25.1.1' // Firebase Firestore for cloud database
+    implementation 'com.google.firebase:firebase-core:21.1.1' // Firebase core functionalities
+    implementation 'com.google.firebase:firebase-auth:23.1.0' // Firebase Authentication
+    implementation 'com.google.firebase:firebase-messaging:24.1.0' // Firebase Cloud Messaging for push notifications
+    implementation 'com.google.firebase:firebase-analytics:22.1.2' // Firebase Analytics for app usage tracking
+    implementation 'com.google.firebase:firebase-database:21.0.0' // Firebase Realtime Database
+    implementation 'com.google.firebase:firebase-storage:21.0.1' // Firebase Storage for handling media
+    implementation 'com.google.firebase:firebase-config:22.0.1' // Firebase Remote Config for feature toggling
+    implementation 'com.google.firebase:firebase-functions:21.1.0' // Firebase Functions for serverless execution
+    implementation 'com.google.firebase:firebase-appindexing:20.0.0' // Firebase App Indexing for search features
+
+// Google Play Services
+    implementation 'com.google.android.gms:play-services-maps:19.0.0' // Google Maps for map-related features
+    implementation 'com.google.android.gms:play-services-auth:21.3.0' // Google Sign-In authentication
+    implementation 'com.google.android.gms:play-services-location:21.3.0' // Google Location APIs
+    implementation 'com.google.android.gms:play-services-places:17.1.0' // Google Places APIs
+    implementation 'com.google.android.gms:play-services-appinvite:18.0.0' // Google App Invites for app referrals
+
+// Firebase UI
+    implementation 'com.firebaseui:firebase-ui-database:8.0.2' // Firebase UI for simplifying integration with Firebase Database
+
+// Android Support Libraries
+    implementation 'com.android.support:design:28.0.0' // Material Design components
+    implementation 'com.android.support:appcompat-v7:28.0.0' // AppCompat for backward compatibility
+    implementation 'com.android.support:support-v4:28.0.0' // Support library for older devices
+    implementation 'com.android.support:support-media-compat:28.0.0' // Support library for media-related components
+    implementation 'com.android.support:animated-vector-drawable:28.0.0' // Support for animated vector drawables
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4' // ConstraintLayout for modern UI layouts
+    implementation 'com.android.support:recyclerview-v7:28.0.0' // RecyclerView for efficient lists
+    implementation 'com.android.support:preference-v14:28.0.0' // Preferences framework for settings screens
+    androidTestImplementation 'com.android.support:support-annotations:28.0.0' // Support annotations for testing
+
+// AndroidX Libraries
+    implementation 'androidx.appcompat:appcompat:1.7.0' // AndroidX AppCompat library
+    implementation 'androidx.annotation:annotation-jvm:1.9.1' // AndroidX annotations
+
+// Image and UI Components
+    implementation 'com.github.bumptech.glide:glide:4.16.0' // Glide for image loading and caching
+    implementation 'de.hdodenhof:circleimageview:3.1.0' // Circular ImageView
+    implementation 'com.github.siyamed:android-shape-imageview:0.9.3@aar' // Shape ImageView
+    implementation 'com.makeramen:roundedimageview:2.3.0' // Rounded ImageView
+
+// Network Libraries
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0' // OkHttp for network requests
+
+// Event Bus
+    implementation 'org.greenrobot:eventbus:3.3.1' // EventBus for event-driven architecture
+
+// Twilio Video Chat
+    implementation "com.twilio:video-android:${versions.videoAndroid}" // Twilio for video chat
+
+// ION
+    implementation "com.koushikdutta.ion:ion:2.1.8" // Ion for networking and image loading
+
+// Bottom Navigation and Relinker
+    implementation project(':bottom-bar') // Local project dependency for bottom navigation
+    implementation 'com.getkeepsafe.relinker:relinker:1.4.4' // Relinker for handling native library loading
+
+// Maps Utilities
+    implementation 'com.google.maps.android:android-maps-utils:3.8.0' // Google Maps utility library
+
+// QR Code Libraries
+    implementation 'com.google.zxing:core:3.5.2' // ZXing core library for QR code generation/decoding
+    implementation 'com.journeyapps:zxing-android-embedded:4.3.0' // Android QR code scanner library (embedded version)
+
+// Test Libraries
+    testImplementation 'junit:junit:4.13.2' // JUnit for unit testing
+    testImplementation 'org.mockito:mockito-core:5.8.0' // Mockito for mocking in tests
+    androidTestImplementation 'com.android.support.test:runner:1.0.2' // Test runner for Android tests
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2' // Espresso for UI testing
+    androidTestImplementation "com.android.support.test.espresso:espresso-intents:3.0.2" // Espresso Intents for intent validation
+    androidTestImplementation 'com.android.support.test:rules:1.0.2' // Test rules for UI testing
+
+// JAR Files
+    implementation fileTree(dir: 'libs', include: ['*.jar']) // Adds all JAR files in the 'libs' directory
+
+// JD Alexander Library
+    implementation 'com.github.jd-alexander:library:1.1.0' // Library for additional UI/functional components
+
+
+}
+
+apply plugin: 'com.google.gms.google-services'
