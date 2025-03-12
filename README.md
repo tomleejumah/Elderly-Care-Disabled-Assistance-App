@@ -1,4 +1,4 @@
-#Kabarak University IT Project - ELderly care Android App
+# Kabarak University IT Project - ELderly care Android App
 
 
 Tutor: Dr Kipkebut
@@ -59,11 +59,21 @@ Minimum Requirement: Android API 26
 
 1. Clone repository
 
+for ssh
+
 ```bash
 git clone git@github.com:tomleejumah/Elderly-Care-Disabled-Assistance-App.git
 ```
 
-1. Checkout branch 'master'
+for https
+
+```bash
+git clone https://github.com/tomleejumah/Elderly-Care-Disabled-Assistance-App.git
+```
+
+you can as well just download it via that green button
+
+2. Checkout branch 'master'
 
 ```bash
 git checkout origin master
