@@ -1,0 +1,2 @@
+include ':bottom-bar'
+include ':app'
