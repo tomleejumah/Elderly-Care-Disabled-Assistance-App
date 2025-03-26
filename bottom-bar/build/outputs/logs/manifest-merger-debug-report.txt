@@ -1,25 +1,25 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/tommlyjumah/AndroidStudioProjects/ONYX/bottom-bar/src/main/AndroidManifest.xml:1:1-46
-INJECTED from /home/tommlyjumah/AndroidStudioProjects/ONYX/bottom-bar/src/main/AndroidManifest.xml:1:1-46
-INJECTED from /home/tommlyjumah/AndroidStudioProjects/ONYX/bottom-bar/src/main/AndroidManifest.xml:1:1-46
+ADDED from /home/tommlyjumah/AndroidStudioProjects/Elderly-Care-Disabled-Assistance-App/bottom-bar/src/main/AndroidManifest.xml:1:1-46
+INJECTED from /home/tommlyjumah/AndroidStudioProjects/Elderly-Care-Disabled-Assistance-App/bottom-bar/src/main/AndroidManifest.xml:1:1-46
+INJECTED from /home/tommlyjumah/AndroidStudioProjects/Elderly-Care-Disabled-Assistance-App/bottom-bar/src/main/AndroidManifest.xml:1:1-46
 	package
-		ADDED from /home/tommlyjumah/AndroidStudioProjects/ONYX/bottom-bar/src/main/AndroidManifest.xml:1:11-43
-		INJECTED from /home/tommlyjumah/AndroidStudioProjects/ONYX/bottom-bar/src/main/AndroidManifest.xml
-		INJECTED from /home/tommlyjumah/AndroidStudioProjects/ONYX/bottom-bar/src/main/AndroidManifest.xml
+		ADDED from /home/tommlyjumah/AndroidStudioProjects/Elderly-Care-Disabled-Assistance-App/bottom-bar/src/main/AndroidManifest.xml:1:11-43
+		INJECTED from /home/tommlyjumah/AndroidStudioProjects/Elderly-Care-Disabled-Assistance-App/bottom-bar/src/main/AndroidManifest.xml
+		INJECTED from /home/tommlyjumah/AndroidStudioProjects/Elderly-Care-Disabled-Assistance-App/bottom-bar/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/tommlyjumah/AndroidStudioProjects/ONYX/bottom-bar/src/main/AndroidManifest.xml:1:1-46
+		ADDED from /home/tommlyjumah/AndroidStudioProjects/Elderly-Care-Disabled-Assistance-App/bottom-bar/src/main/AndroidManifest.xml:1:1-46
 uses-sdk
-INJECTED from /home/tommlyjumah/AndroidStudioProjects/ONYX/bottom-bar/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/tommlyjumah/AndroidStudioProjects/ONYX/bottom-bar/src/main/AndroidManifest.xml
-INJECTED from /home/tommlyjumah/AndroidStudioProjects/ONYX/bottom-bar/src/main/AndroidManifest.xml
-INJECTED from /home/tommlyjumah/AndroidStudioProjects/ONYX/bottom-bar/src/main/AndroidManifest.xml
-INJECTED from /home/tommlyjumah/AndroidStudioProjects/ONYX/bottom-bar/src/main/AndroidManifest.xml
+INJECTED from /home/tommlyjumah/AndroidStudioProjects/Elderly-Care-Disabled-Assistance-App/bottom-bar/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/tommlyjumah/AndroidStudioProjects/Elderly-Care-Disabled-Assistance-App/bottom-bar/src/main/AndroidManifest.xml
+INJECTED from /home/tommlyjumah/AndroidStudioProjects/Elderly-Care-Disabled-Assistance-App/bottom-bar/src/main/AndroidManifest.xml
+INJECTED from /home/tommlyjumah/AndroidStudioProjects/Elderly-Care-Disabled-Assistance-App/bottom-bar/src/main/AndroidManifest.xml
+INJECTED from /home/tommlyjumah/AndroidStudioProjects/Elderly-Care-Disabled-Assistance-App/bottom-bar/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /home/tommlyjumah/AndroidStudioProjects/ONYX/bottom-bar/src/main/AndroidManifest.xml
-		ADDED from /home/tommlyjumah/AndroidStudioProjects/ONYX/bottom-bar/src/main/AndroidManifest.xml
-		INJECTED from /home/tommlyjumah/AndroidStudioProjects/ONYX/bottom-bar/src/main/AndroidManifest.xml
+		INJECTED from /home/tommlyjumah/AndroidStudioProjects/Elderly-Care-Disabled-Assistance-App/bottom-bar/src/main/AndroidManifest.xml
+		ADDED from /home/tommlyjumah/AndroidStudioProjects/Elderly-Care-Disabled-Assistance-App/bottom-bar/src/main/AndroidManifest.xml
+		INJECTED from /home/tommlyjumah/AndroidStudioProjects/Elderly-Care-Disabled-Assistance-App/bottom-bar/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/tommlyjumah/AndroidStudioProjects/ONYX/bottom-bar/src/main/AndroidManifest.xml
-		ADDED from /home/tommlyjumah/AndroidStudioProjects/ONYX/bottom-bar/src/main/AndroidManifest.xml
-		INJECTED from /home/tommlyjumah/AndroidStudioProjects/ONYX/bottom-bar/src/main/AndroidManifest.xml
+		INJECTED from /home/tommlyjumah/AndroidStudioProjects/Elderly-Care-Disabled-Assistance-App/bottom-bar/src/main/AndroidManifest.xml
+		ADDED from /home/tommlyjumah/AndroidStudioProjects/Elderly-Care-Disabled-Assistance-App/bottom-bar/src/main/AndroidManifest.xml
+		INJECTED from /home/tommlyjumah/AndroidStudioProjects/Elderly-Care-Disabled-Assistance-App/bottom-bar/src/main/AndroidManifest.xml

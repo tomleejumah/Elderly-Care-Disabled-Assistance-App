@@ -3,6 +3,6 @@
 3    package="com.roughike.bottombar" >
 4
 5    <uses-sdk android:minSdkVersion="23" />
-5-->/home/tommlyjumah/AndroidStudioProjects/ONYX/bottom-bar/src/main/AndroidManifest.xml
+5-->/home/tommlyjumah/AndroidStudioProjects/Elderly-Care-Disabled-Assistance-App/bottom-bar/src/main/AndroidManifest.xml
 6
 7</manifest>

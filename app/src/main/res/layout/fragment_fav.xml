@@ -11,7 +11,7 @@
 
 
 
-    <com.example.onyx.onyx.ui.layout.TopTabLayout
+    <com.example.elderCare.app.ui.layout.TopTabLayout
         android:id="@+id/tab_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

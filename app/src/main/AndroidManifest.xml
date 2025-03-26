@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.onyx.onyx">
+    package="com.example.elderCare.app">
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -50,7 +50,8 @@
         <uses-library android:name="org.apache.http.legacy" android:required="false"/>
 
         <activity
-            android:name=".SplashActivity"
+            android:name="com.example.elderCare.app.SplashActivity"
+            android:exported="true"
             android:theme="@style/SplashTheme"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -65,17 +66,17 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".ui.activities.UserListingActivity"
+            android:name="com.example.elderCare.app.ui.activities.UserListingActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".ui.activities.ChatActivity"
+            android:name="com.example.elderCare.app.ui.activities.ChatActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"/>
 
-        <activity android:name=".MainActivity"
+        <activity android:name="com.example.elderCare.app.MainActivity"
             android:exported="true"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
@@ -95,25 +96,27 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".SignUpActivity"
+        <activity android:name="com.example.elderCare.app.SignUpActivity"
             android:screenOrientation="portrait">
         </activity>
 
-        <activity android:name=".SignInActivity"
+        <activity android:name="com.example.elderCare.app.SignInActivity"
+            android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:screenOrientation="portrait"/>
 
-        <service android:name=".fcm.MyFirebaseMessagingService">
+        <service android:name="com.example.elderCare.app.fcm.MyFirebaseMessagingService"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
 
-        <service android:name=".LocationService" />
-        <service android:name=".FallService" />
+        <service android:name="com.example.elderCare.app.LocationService" />
+        <service android:name="com.example.elderCare.app.FallService" />
 
-        <receiver android:name=".CarerRequestAcceptBroadcastReceiver" />
-        <receiver android:name=".CarerRequestDismissBroadcastReceiver" />
+        <receiver android:name="com.example.elderCare.app.CarerRequestAcceptBroadcastReceiver" />
+        <receiver android:name="com.example.elderCare.app.CarerRequestDismissBroadcastReceiver" />
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
