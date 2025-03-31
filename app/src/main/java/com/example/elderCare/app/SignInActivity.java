@@ -53,10 +53,12 @@ public class SignInActivity extends AppCompatActivity implements
         mSignInButton.setOnClickListener(this);
 
         db = FirebaseFirestore.getInstance();
+        String webClientId = BuildConfig.WEB_CLIENT_ID;
+
 
         // Configure Google Sign In
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestIdToken(getString(R.string.default_web_client_id))
+                .requestIdToken(webClientId)
                 .requestEmail()
                 .build();
         mGoogleApiClient = new GoogleApiClient.Builder(this)
@@ -128,7 +130,7 @@ public class SignInActivity extends AppCompatActivity implements
                 firebaseAuthWithGoogle(Objects.requireNonNull(account));
             } else {
                 // Google Sign-In failed
-                Log.e(TAG, "Google Sign-In failed.");
+                Log.e(TAG, "Google Sign-In failed."+result.isSuccess());
             }
         }
     }

@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="com.example.onyx.onyx" />
-                  <option name="mobileSdkAppId" value="1:692680492294:android:614fdf26c4578fcb" />
-                  <option name="projectId" value="onyx-bd894" />
-                  <option name="projectNumber" value="692680492294" />
+                  <option name="appId" value="com.example.elderCare.app" />
+                  <option name="mobileSdkAppId" value="1:209820622367:android:5ccfc53c69338ddb963f2a" />
+                  <option name="projectId" value="nisisi" />
+                  <option name="projectNumber" value="209820622367" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

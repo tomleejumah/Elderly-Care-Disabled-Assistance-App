@@ -99,7 +99,8 @@ public class BottomBarTab extends LinearLayout {
         setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
         setBackgroundResource(MiscUtils.getDrawableRes(getContext(), R.attr.selectableItemBackgroundBorderless));
 
-        iconView = (AppCompatImageView) findViewById(R.id.bb_bottom_bar_icon);
+        iconView = findViewById(R.id.bb_bottom_bar_icon);
+//        iconView.setImageResource(iconResId);
         iconView.setImageResource(iconResId);
 
         if (type != Type.TABLET && !isTitleless) {

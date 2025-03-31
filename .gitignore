@@ -1,0 +1,19 @@
+# Ignore local configuration files
+local.properties
+google-services.json
+
+# Ignore Gradle build files
+.gradle/
+build/
+captures/
+
+# Ignore IDE-related files
+.idea/
+*.iml
+
+# Ignore generated files
+*.log
+*.lock
+*.bin
+*.class
+

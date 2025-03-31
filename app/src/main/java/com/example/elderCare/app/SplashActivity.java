@@ -7,9 +7,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-/**
- * Created by xin on 14/08/2018.
- */
 public class SplashActivity extends AppCompatActivity {
 
     @Override
